@@ -706,9 +706,9 @@ export class Triangle extends CollisionShape implements Polygon {
         ctx.rotate(this.rotation * Math.PI / 180);
 
         ctx.beginPath();
-        ctx.moveTo(0, this.edge * 2/3);
-        ctx.lineTo(-this.edge / 2, -this.edge / 3);
-        ctx.lineTo(this.edge / 2, -this.edge / 3);
+        ctx.moveTo(0, this.h * 2/3);
+        ctx.lineTo(-this.edge / 2, -this.h / 3);
+        ctx.lineTo(this.edge / 2, -this.h / 3);
         ctx.closePath();
         ctx.fill();
         
